@@ -13,6 +13,10 @@
 		84CA04BC25272C0200E830FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04BB25272C0200E830FF /* Assets.xcassets */; };
 		84CA04BF25272C0200E830FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04BE25272C0200E830FF /* Preview Assets.xcassets */; };
 		84CA04C225272C0200E830FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA04C025272C0200E830FF /* LaunchScreen.storyboard */; };
+		84CA04CC25272C4900E830FF /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04CB25272C4900E830FF /* Repo.swift */; };
+		84CA04D125272D0D00E830FF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04D025272D0D00E830FF /* Note.swift */; };
+		84CA04D525272D7300E830FF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04D425272D7300E830FF /* DetailView.swift */; };
+		84CA04D825272E2500E830FF /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA04D725272E2500E830FF /* MyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		84CA04BE25272C0200E830FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84CA04C125272C0200E830FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CA04C325272C0200E830FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CA04CB25272C4900E830FF /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		84CA04D025272D0D00E830FF /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		84CA04D425272D7300E830FF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		84CA04D725272E2500E830FF /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,11 @@
 		84CA04B425272BFF00E830FF /* SwiftUIEditorWithOutFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				84CA04D325272D6300E830FF /* view */,
+				84CA04CF25272CD800E830FF /* model */,
+				84CA04CA25272C3500E830FF /* repo */,
 				84CA04B525272BFF00E830FF /* AppDelegate.swift */,
 				84CA04B725272BFF00E830FF /* SceneDelegate.swift */,
-				84CA04B925272BFF00E830FF /* ContentView.swift */,
 				84CA04BB25272C0200E830FF /* Assets.xcassets */,
 				84CA04C025272C0200E830FF /* LaunchScreen.storyboard */,
 				84CA04C325272C0200E830FF /* Info.plist */,
@@ -73,6 +83,32 @@
 				84CA04BE25272C0200E830FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84CA04CA25272C3500E830FF /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				84CA04CB25272C4900E830FF /* Repo.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		84CA04CF25272CD800E830FF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84CA04D025272D0D00E830FF /* Note.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		84CA04D325272D6300E830FF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84CA04B925272BFF00E830FF /* ContentView.swift */,
+				84CA04D425272D7300E830FF /* DetailView.swift */,
+				84CA04D725272E2500E830FF /* MyTextView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA04D125272D0D00E830FF /* Note.swift in Sources */,
+				84CA04D525272D7300E830FF /* DetailView.swift in Sources */,
 				84CA04B625272BFF00E830FF /* AppDelegate.swift in Sources */,
+				84CA04D825272E2500E830FF /* MyTextView.swift in Sources */,
 				84CA04B825272BFF00E830FF /* SceneDelegate.swift in Sources */,
 				84CA04BA25272BFF00E830FF /* ContentView.swift in Sources */,
+				84CA04CC25272C4900E830FF /* Repo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
